@@ -14,3 +14,4 @@ This program was developed with JAVA and the source code is available from [http
 After unpackting the file, you can find these: 
   * !BugLocator.jar
   * !ReadMe.txt
+= How to use=
