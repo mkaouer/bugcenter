@@ -2,7 +2,7 @@
 
 = Introduction=
 
-This page describes !BugLocator - the software we developed for our research work on locating the source code files that need to be changed.!BugLocator ranks all files based on the textual similarity between the initial bug report and the source code using a new similarity measure, taking into consideration information about similar bugs that have been fixed before. 
+This page describes !BugLocator - the software we developed for our research work on locating the source code files that need to be changed. !BugLocator ranks all files based on the textual similarity between the initial bug report and the source code using a new similarity measure, taking into consideration information about similar bugs that have been fixed before. 
 
 
 = Download and Installation =
