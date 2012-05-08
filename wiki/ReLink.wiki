@@ -1,4 +1,4 @@
-#A tool for recovering missing links between bugs and changes.
+#summary A tool for recovering missing links between bugs and changes.
 
 = Introduction =
 
