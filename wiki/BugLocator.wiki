@@ -7,7 +7,7 @@ For a large and evolving software system, the project team could receive a large
 
 = Download and Installation =
 
-The program is free for scientific use only. More information about !BugLocator can be found at the following paper: 
+!BugLocator is free for scientific use only. More information about !BugLocator can be found at the following paper: 
   _Jian Zhou, Hongyu Zhang, and David Lo, Where Should the Bugs be Fixed? More    Accurate Information Retrieval-Based Bug Localization based on Bugs Reports, In  Proc. ICSE 2012, Zurich, Switzerland, June 2012_
 This program was developed with Java and the source code is available from [http://code.google.com/p/bugcenter/downloads/list Download page].
 
