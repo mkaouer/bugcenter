@@ -28,8 +28,11 @@ where options must include:
 
 -o	indicates the result file,the format of result file is "bug id, relevant source code file,rank(start with 0),score".
 
-For example the command may be "java -jar !BugLocator -b E:\Data&Tool\data\SWTBugRepository.xml -s E:\Data&Tool\swt-3.1\src -a 0.2 -o E:\Data&Tool\output.txt" for SWT system
-
+For example the command for SWT system may be 
+{{{
+java -jar !BugLocator -b E:\Data&Tool\data\SWTBugRepository.xml 
+-s E:\Data&Tool\swt-3.1\src -a 0.2 -o E:\Data&Tool\output.txt" 
+}}}
 
 
 
