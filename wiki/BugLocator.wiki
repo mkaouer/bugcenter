@@ -15,7 +15,7 @@ After unpackting the file, you can find these:
   * !BugLocator.jar
   * !ReadMe.txt
   * Data Folder(xml examples)
-= Usage=
+= How to use=
 java -jar !BugLocator [-options] 
 
 where options must include:
