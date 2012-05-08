@@ -12,5 +12,5 @@ The program is free for scientific use only. More information about !BugLocator 
 This program was developed with JAVA and the source code is available from [http://code.google.com/p/bugcenter/downloads/list Download page].
 
 After unpackting the file, you can find these: 
-  * BugLocator.jar
-  * ReadMe.txt
+  * !BugLocator.jar
+  * !ReadMe.txt
