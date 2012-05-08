@@ -30,7 +30,7 @@ where options must include:
 
 For example the command for SWT system may be 
 {{{
-java -jar BugLocator -b E:\Data&Tool\data\SWTBugRepository.xml -s E:\Data&Tool\swt-3.1\src -a 0.2 -o E:\Data&Tool\output.txt" 
+java -jar BugLocator -b E:\data\SWTBugRepository.xml -s E:\swt-3.1\src -a 0.2 -o E:\Data&Tool\output.txt" 
 }}}
 
 
