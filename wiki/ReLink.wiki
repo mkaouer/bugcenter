@@ -1,0 +1,13 @@
+#A tool for recovering missing links between bugs and changes.
+
+= Introduction =
+
+This page describes the software we developed for our research work on recovering missing links between bugs and changes, combining Information Retrieval technology and other useful features. The research work will be helpful to the researches which are based on the linkage data, such as defect prediction.
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
