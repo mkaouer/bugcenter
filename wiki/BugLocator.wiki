@@ -34,4 +34,4 @@ For example the command may be "java -jar !BugLocator -b E:\Data&Tool\data\SWTBu
 
 
 If you have any comments/questions regarding the research work or software, 
-please feel free to <a href="mailto:zhoujian1286@yahoo.com.cn">contact us</a>. 
+please feel free to [mailto:zhoujian1286@yahoo.com.cn contact us]. 
