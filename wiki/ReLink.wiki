@@ -7,7 +7,7 @@ This page describes the software we developed for our research work on recoverin
 
 = Download and Installation =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+
+The software is developed in Java. We use the open source project WVTool to construct Vector Space Model and use WordNet to process the synonymous words.
+
+The software can be downloaded here. The software contains one jar file named "ReLink.jar", a wordnet configuration file named "file_properties.xml" and wordnet dictionary named "dictionary".
