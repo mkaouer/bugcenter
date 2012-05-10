@@ -50,3 +50,6 @@ recommendRevisionAuthor	recommendRevisionLog	isTrueLink
 = Evaluation Projects =
 
 With this distribution, we also provide 2 projects for evaluation, ZXing and OpenIntents. ZXing and OpenIntents are both android projects. We provide the raw data and the golden sets of links which have been manually checked. If you want to verify the tool using other projects, please refer to the format of the input files.
+
+If you have any comments/questions regarding the research work or software, 
+please feel free to [mailto:hongyu@tsinghua.edu.cn contact us]. 
