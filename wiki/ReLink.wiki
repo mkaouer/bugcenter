@@ -43,6 +43,10 @@ $ java -jar ReLink.jar bugDataFile bugCommentDataFile changeLogFile dataStorageD
 The output file is final_results.txt. The format of the output file is: 
 
 {{{
-bugID	reporter	owner status	 reportDate	modifiedDate	 Type	bugSummary	
-recommendRevisionNO recommendRevisionAuthor	recommendRevisionLog	isTrueLink
+bugID	reporter	owner status	 reportDate	modifiedDate	 Type	bugSummary	recommendRevisionNO 
+recommendRevisionAuthor	recommendRevisionLog	isTrueLink
 }}}
+
+= Evaluation Projects =
+
+With this distribution, we also provide 2 projects for evaluation, ZXing and OpenIntents. ZXing and OpenIntents are both android projects. We provide the raw data and the golden sets of links which have been manually checked. If you want to verify the tool using other projects, please refer to the format of the input files.
