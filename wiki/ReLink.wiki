@@ -7,6 +7,7 @@ This page describes the software we developed for our research work on recoverin
 
 = Download and Installation =
 
+!ReLinkis free for scientific use only. More information about !ReLinkcan be found at the following paper:
 
 The software is developed in Java. We use the open source project WVTool to construct Vector Space Model and use !WordNet to process the synonymous words.
 
