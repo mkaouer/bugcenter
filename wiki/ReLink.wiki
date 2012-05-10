@@ -24,8 +24,12 @@ For details about the approach, please refer to our paper.
 
 Java 1.5 is required to run the software. To run the software, issue the following command:
 
-{{{ $ java -jar ReLink.jar bugDataFile bugCommentDataFile changeLogFile dataStorageDirectory (-g goldenSetFile) (-i indexFile) }}}
+{{{ 
+$ java -jar ReLink.jar bugDataFile bugCommentDataFile changeLogFile dataStorageDirectory (-g goldenSetFile) (-i indexFile) 
+}}}
 
 The output file is final_results.txt. The format of the output file is: 
 
-{{{bugID	reporter	owner status	 reportDate	modifiedDate	 Type	bugSummary	recommendRevisionNO recommendRevisionAuthor	recommendRevisionLog	isTrueLink}}}
+{{{
+bugID	reporter	owner status	 reportDate	modifiedDate	 Type	bugSummary	recommendRevisionNO recommendRevisionAuthor	recommendRevisionLog	isTrueLink
+}}}
