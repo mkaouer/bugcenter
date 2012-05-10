@@ -1,5 +1,9 @@
 #summary A tool for recovering missing links between bugs and changes.
 
+= !ReLink=
+
+<wiki:toc max_depth="1" />
+
 = Introduction =
 
 This page describes the software we developed for our research work on recovering missing links between bugs and changes, combining Information Retrieval technology and other useful features. The research work will be helpful to the researches which are based on the linkage data, such as defect prediction.
