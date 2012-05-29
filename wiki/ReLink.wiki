@@ -21,7 +21,7 @@ The software contains one jar file named "!ReLink.jar", a wordnet configuration 
 
 = How to use =
 
-The software takes bug data file, bug comment file and change log file as the input and produces the links in the specified directory. The followings are the input description.
+The software takes bug data file, bug comment file and change log file as the input and produces the links in the specified directory. The followings are the input descriptions.
 
   * Name of bug data file. Bug data file provides the basic bug information. The format of the bug data file is: bugID	Type	Status	 Owner	Reporter	!ReportDate	!ModifiedDate !LastDate	Summary	Comments
 
