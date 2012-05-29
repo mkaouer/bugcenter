@@ -13,7 +13,7 @@ This page describes the tool we developed for our research work on recovering mi
 
 !ReLink is free for scientific use only. More information about !ReLinkcan be found at the following paper:
 
-  _Rongxin Wu, Hongyu Zhang, Sunghum Kim, S.C. Cheung, Recovering Links between Bugs and Changes, ESEC/FSE 2011_
+ _Rongxin Wu, Hongyu Zhang, Sunghun Kim, and S.C.Cheung, ReLink: Recovering Links between Bugs and Changes, in Proc. The joint meeting of the European Software Engineering Conference and the ACM SIGSOFT Symposium on the Foundations of Software Engineering (ESEC/FSE'11), Szeged, Hungary, Sep 5-9 2011._
 
 The software is developed in Java and is available at:  [http://code.google.com/p/bugcenter/downloads/list Download page]. 
 
