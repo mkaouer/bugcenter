@@ -24,7 +24,7 @@ After unpacking the zip file, you can find the following files:
 = How to use=
 java -jar !BugLocator [-options] 
 
-where options must include:
+, where options must include:
 -b	indicates the bug information file,the bug information file must be an .xml file in the data folder.
 
 -s	indicates the source code directory.
