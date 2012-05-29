@@ -17,7 +17,7 @@ This page describes the tool we developed for our research work on recovering mi
 
 The software is developed in Java and is available at:  [http://code.google.com/p/bugcenter/downloads/list Download page]. 
 
-The software contains one jar file named "!ReLink.jar", a wordnet configuration file named "file_properties.xml" and wordnet dictionary named "dictionary".
+The software contains one jar file named "!ReLink.jar", a wordnet configuration file named "file_properties.xml", and a wordnet dictionary named "dictionary".
 
 = How to use =
 
