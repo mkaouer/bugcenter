@@ -29,7 +29,7 @@ java -jar !BugLocator [-options]
 
 -s	indicates the source code directory.
 
--a	indicates the alpha factor for combining VSMScore and SimiScore
+-a	indicates the alpha factor for combining VSMScore and SimiScore.
 
 -o	indicates the result file,the format of result file is "bug id, relevant source code file,rank(start with 0),score".
 
