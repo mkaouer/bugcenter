@@ -1,5 +1,15 @@
 package db;
 
+//java SQL
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.SQLWarning;
+import java.sql.Statement;
+//java utilities
+import java.util.ArrayList;
+import java.util.Date;
+
 //STEP 1. Import required packages
 import java.sql.*;
 
@@ -13,11 +23,22 @@ public class Executor
    static final String USER = "root";
    static final String PASS = "";
    
+
+   
    public static void main(String[] args) 
    {
 	   Connection conn = null;
 	   Statement stmt = null;
 	   BugList buglist = new BugList();
+	   
+	   try 
+	   {
+		System.out.println("Number of bugs:"+buglist.rows_number("bug_and_files"));
+	} catch (ApplicationException e1) {
+		// TODO Auto-generated catch block
+		e1.printStackTrace();
+	}
+	   
    
    try
    {
