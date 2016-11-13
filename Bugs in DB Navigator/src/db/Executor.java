@@ -60,7 +60,7 @@ public class Executor
       //STEP 5: Extract data from result set
    
       Bug temp ;
-      System.out.print(">>Query to retrieve data being executed... ");
+      System.out.print(">>Query to retrieve bugs being executed... ");
       while(rs.next())
       {
     	  temp = new Bug();
@@ -70,8 +70,8 @@ public class Executor
           else temp.summary = new String("N/A");
           if (rs.getString("description") != null) temp.description = new String(rs.getString("description"));
           else temp.description = new String("N/A");
-          if (rs.getString("report_time") != null) temp.report_time = new String(rs.getString("report_time"));
-          else temp.report_time = new String("N/A");
+          if (rs.getDate("report_time") != null) temp.report_time = rs.getDate("report_time");
+          else temp.report_time = new java.sql.Date(0);
           if (rs.getObject("report_timestamp") != null) temp.report_timestamp = new Double(rs.getDouble("report_timestamp"));
           else temp.report_timestamp = new Double(0);
           if (rs.getObject("commit_timestamp") != null) temp.commit_timestamp = new Double(rs.getDouble("commit_timestamp"));
@@ -81,7 +81,7 @@ public class Executor
           // Adding to ArrayList
           buglist.bugs.add(temp);
       }
-      
+      System.out.println("done");
    // ---- table bug_and_files
       sql = "SELECT * FROM file_history";
       rs = stmt.executeQuery(sql);
@@ -89,7 +89,7 @@ public class Executor
       //STEP 5: Extract data from result set
    
       BugFile tempFile ;
-      System.out.print(">>Query to retrieve data being executed... ");
+      System.out.print(">>Query to retrieve files being executed... ");
       while(rs.next())
       {
     	  tempFile = new BugFile();
@@ -102,7 +102,7 @@ public class Executor
           // Adding to ArrayList     
           buglist.files.add(tempFile);
       }
-      System.out.print("done");   
+      System.out.println("done");   
      	
       
       //STEP 6: Clean-up environment
@@ -129,9 +129,9 @@ public class Executor
          se.printStackTrace();
       }//end finally try
    }//end try
-   
    buglist.printData();
-   
+   buglist.assignBugsToFiles();
+   buglist.export_files_data();
    
    
    

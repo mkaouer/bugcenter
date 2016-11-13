@@ -5,7 +5,7 @@ public class Bug
 	int bug_id;
 	String summary;
 	String description;
-	String report_time;
+	java.sql.Date report_time;
 	Double report_timestamp;
 	Double commit_timestamp;
 	String files;
@@ -15,9 +15,10 @@ public class Bug
 		
 	}
 	
+		
 	void printData()
 	{
-		System.out.println("\n bug_id:"+this.bug_id+" start:"+this.report_time.toString()+
+		System.out.println("bug_id:"+this.bug_id+" start:"+this.report_time.toString()+
 				" fixed:"+this.commit_timestamp.toString());
 	}
 	
