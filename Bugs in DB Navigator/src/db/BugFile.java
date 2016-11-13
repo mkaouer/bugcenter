@@ -1,6 +1,7 @@
 package db;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 
 public class BugFile 
 {
@@ -19,6 +20,7 @@ public class BugFile
 		bug_id = new String();
 		bug_date = new String();
 		bug_ids = new ArrayList<String>();
+		bug_dates = new ArrayList<String>();
 		this.bugs = new ArrayList();
 	}
 	
@@ -36,18 +38,38 @@ public class BugFile
 				if(bugs.get(j).bug_id == Integer.parseInt(bug_ids.get(i)))
 				{
 					this.bugs.add(bugs.get(j));
-					this.bug_dates.add(Integer.toString(bugs.get(j).report_time));
-					this.bug_date.concat(" "+Integer.toString(bugs.get(j).report_time.getYear()));
+					this.bug_dates.add(bugs.get(j).report_time_2.substring(0,10));					
+					//create calander instance and get required params
+					
+					Calendar cal = Calendar.getInstance();
+					cal.setTime(bugs.get(j).report_time);
+					int month = cal.get(Calendar.MONTH);
+					int day = cal.get(Calendar.DAY_OF_MONTH);
+					int year = cal.get(Calendar.YEAR);
+					//this.bug_dates.add(Integer.toString(year));
+					//this.bug_date.concat(" "+Integer.toString(year));
+					
 				}
-			}
-		    
+			} 
+		}
+		this.bug_date = new String();
+		
+		for (int i = 0; i < this.bug_dates.size(); i++) 
+		{
+			if (i==0) this.bug_date = new String(bug_dates.get(i));
+			else this.bug_date = this.bug_date.concat(" "+bug_dates.get(i));
 		}
 	}
 	
 	void printData()
 	{
 		System.out.println("doc_id:"+this.doc_id+" has:"+this.bug_ids.size()+
-				" bugs and it name is:"+this.file_name);
+				" bugs reported and "+this.bugs.size()+" bugs detected and "+this.bug_dates.size()+" years detected:");
+		for (int i=0 ; i < this.bug_dates.size() ; i++)
+		{
+			System.out.print(bug_dates.get(i)+" ");
+		}
+		System.out.println();
 	}
 
 }

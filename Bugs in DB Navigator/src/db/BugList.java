@@ -33,12 +33,12 @@ public class BugList
 	{
 		System.out.println("***--- Number bug records "+bugs.size()+" Number file records "+files.size()+"---***");
 		
-		for(int i=0;i<2;i++)
+		for(int i=0;i<5;i++)
 		{
 			bugs.get(i).printData();
 			//files.get(i).printData();
 		}
-		for(int i=0;i<2;i++)
+		for(int i=0;i<20;i++)
 		{
 			//bugs.get(i).printData();
 			files.get(i).printData();

@@ -72,6 +72,8 @@ public class Executor
           else temp.description = new String("N/A");
           if (rs.getDate("report_time") != null) temp.report_time = rs.getDate("report_time");
           else temp.report_time = new java.sql.Date(0);
+          if (rs.getString("report_time") != null) temp.report_time_2 = rs.getString("report_time");
+          else temp.report_time_2 = new String("N/A");
           if (rs.getObject("report_timestamp") != null) temp.report_timestamp = new Double(rs.getDouble("report_timestamp"));
           else temp.report_timestamp = new Double(0);
           if (rs.getObject("commit_timestamp") != null) temp.commit_timestamp = new Double(rs.getDouble("commit_timestamp"));
@@ -129,8 +131,9 @@ public class Executor
          se.printStackTrace();
       }//end finally try
    }//end try
-   buglist.printData();
+   
    buglist.assignBugsToFiles();
+   buglist.printData();
    buglist.export_files_data();
    
    
