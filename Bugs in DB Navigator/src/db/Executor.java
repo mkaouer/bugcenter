@@ -53,6 +53,7 @@ public class Executor
       System.out.println("Creating statement...");
       stmt = conn.createStatement();
       String sql;
+      // ---- table bug_and_files
       sql = "SELECT * FROM bug_and_files";
       ResultSet rs = stmt.executeQuery(sql);
 
@@ -71,17 +72,39 @@ public class Executor
           else temp.description = new String("N/A");
           if (rs.getString("report_time") != null) temp.report_time = new String(rs.getString("report_time"));
           else temp.report_time = new String("N/A");
-          if (rs.getTimestamp("report_timestamp") != null) temp.report_timestamp = rs.getTimestamp("report_timestamp");
-          else temp.report_timestamp = new java.sql.Timestamp(0);
-          if (rs.getTimestamp("commit_timestamp") != null) temp.commit_timestamp = rs.getTimestamp("commit_timestamp");
-          else temp.commit_timestamp = new java.sql.Timestamp(0);
+          if (rs.getObject("report_timestamp") != null) temp.report_timestamp = new Double(rs.getDouble("report_timestamp"));
+          else temp.report_timestamp = new Double(0);
+          if (rs.getObject("commit_timestamp") != null) temp.commit_timestamp = new Double(rs.getDouble("commit_timestamp"));
+          else temp.commit_timestamp = new Double(0);
           if (rs.getString("files") != null) temp.files = new String(rs.getString("files"));
           else temp.files = new String("N/A");
-          
+          // Adding to ArrayList
           buglist.bugs.add(temp);
       }
-         
+      
+   // ---- table bug_and_files
+      sql = "SELECT * FROM file_history";
+      rs = stmt.executeQuery(sql);
+
+      //STEP 5: Extract data from result set
+   
+      BugFile tempFile ;
+      System.out.print(">>Query to retrieve data being executed... ");
+      while(rs.next())
+      {
+    	  tempFile = new BugFile();
+          if (rs.getObject("doc_id") != null) tempFile.doc_id = new Integer(rs.getInt("doc_id"));
+          else tempFile.doc_id = -1;
+          if (rs.getString("file_name") != null) tempFile.file_name = new String(rs.getString("file_name"));
+          else tempFile.file_name = new String("N/A");
+          if (rs.getString("bug_id") != null) tempFile.bug_id = new String(rs.getString("bug_id"));
+          else tempFile.bug_id = new String("N/A");
+          // Adding to ArrayList     
+          buglist.files.add(tempFile);
+      }
+      System.out.print("done");   
      	
+      
       //STEP 6: Clean-up environment
       rs.close();
       stmt.close();
@@ -106,6 +129,12 @@ public class Executor
          se.printStackTrace();
       }//end finally try
    }//end try
-   System.out.println("Goodbye!");
+   
+   buglist.printData();
+   
+   
+   
+   
+   System.out.println("End Of Main!");
 }//end main
 }//end FirstExample

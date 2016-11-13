@@ -9,7 +9,8 @@ import java.util.ArrayList;
 
 public class BugList 
 {
-	ArrayList<Bug> bugs ;
+	ArrayList<Bug> bugs;
+	ArrayList<BugFile> files;
 	// Connection Parameters
 	private Connection connection;
 	private Statement statement;
@@ -18,11 +19,21 @@ public class BugList
 	BugList()
 	{
 		this.bugs = new ArrayList();
+		this.files = new ArrayList();
+	}
+		   
+
+	
+	void printData()
+	{
+		System.out.println("***--- Number bug records "+bugs.size()+" Number file records "+files.size()+"---***\n");
+		
+		for(int i=0;i<bugs.size();i++)
+		{
+			//bugs.get(i).printData();
+		}
 	}
 	
-	
-	   
-	   
 	   @SuppressWarnings("finally")
 		public int rows_number(String tableName) throws ApplicationException 
 	   {
@@ -34,7 +45,7 @@ public class BugList
 	           statement = connection.createStatement();
 	           resultSet =statement.executeQuery(query);
 	           
-	           while(resultSet .next())
+	           while(resultSet.next())
 	           {
 	           	rows_number = resultSet.getInt("total");
 	           }
@@ -57,10 +68,5 @@ public class BugList
 	           return rows_number;
 	       }
 	   }
-	
-	void printBugs()
-	{
-		
-	}
 
 }

@@ -6,8 +6,8 @@ public class Bug
 	String summary;
 	String description;
 	String report_time;
-	java.sql.Timestamp report_timestamp;
-	java.sql.Timestamp commit_timestamp;
+	Double report_timestamp;
+	Double commit_timestamp;
 	String files;
 	
 	public Bug()
