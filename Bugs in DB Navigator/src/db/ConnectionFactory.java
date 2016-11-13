@@ -9,7 +9,7 @@ import java.sql.SQLException;
 public class ConnectionFactory {
     //static reference to itself
     private static ConnectionFactory instance = new ConnectionFactory();
-    public static final String URL = "jdbc:mysql://localhost:3306/eclipse_platform_ui";
+    public static final String URL = "jdbc:mysql://localhost/eclipse_platform_ui";
     //public static final String URL = "jdbc:mysql://localhost:3306/SMGPMDemo"; // sting not appropriate for Ms SQL
     public static final String USER = "root";
     public static final String PASSWORD = "";

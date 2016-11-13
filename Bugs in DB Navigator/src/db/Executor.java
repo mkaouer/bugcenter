@@ -53,7 +53,7 @@ public class Executor
       System.out.println("Creating statement...");
       stmt = conn.createStatement();
       String sql;
-      sql = "SELECT SELECT * FROM `bug_and_files`";
+      sql = "SELECT * FROM bug_and_files";
       ResultSet rs = stmt.executeQuery(sql);
 
       //STEP 5: Extract data from result set
